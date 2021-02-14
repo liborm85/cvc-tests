@@ -25,7 +25,7 @@ jobs:
         run: composer global require liborm85/composer-vendor-cleaner
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
+        run: composer install --prefer-dist --no-progress --no-suggest -v
 
       - name: Files list
         run: find vendor/ -print
