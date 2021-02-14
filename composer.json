@@ -1,0 +1,41 @@
+{
+  "require": {
+    "composer/semver": "^3.2",
+    "consolidation/output-formatters": "^4.1",
+    "symfony/filesystem": "^5.2",
+    "symfony/http-client-contracts": "^2.3",
+    "twig/twig": "^3.2"
+  },
+  "extra": {
+    "dev-files": {
+      "/": [
+        "demos/",
+        "demo/",
+        "tests/",
+        "testing/",
+        "consolidation/",
+        "examples/",
+        "!/modules/lightning_core/"
+      ],
+      "twig/twig": [
+        "/src/test/integrationtestcase.php"
+      ],
+      "composer/semver": [
+        "/src/versionparser.php"
+      ],
+      "consolidation/output-formatters": [
+        "/src/formatters/stringformatter.php",
+        "/src/transformations/tabletransformation.php",
+        "/src/transformations/wrap/columnwidths.php"
+      ],
+      "symfony/http-client-contracts": [
+        "/test/"
+      ]
+    }
+  },
+  "config": {
+    "dev-files": {
+      "match-case": false
+    }
+  }
+}
